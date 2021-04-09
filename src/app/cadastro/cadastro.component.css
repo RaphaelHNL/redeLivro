@@ -1,0 +1,42 @@
+.bodyCad{
+  background-color: #3d3d3d;
+}
+
+.navContainer{
+  background-color: #f0f0f0;
+}
+.navContainer a{
+  color: black;
+  font-weight: 500;
+}
+
+.cadContianer h1{
+  margin-bottom: 2%;
+}
+
+.btn{
+  margin-left: 1%;
+}
+
+.cadContianer{
+  background-color: #dbdbdb;
+  border-radius: 1%;
+  margin-top: 2%;
+  padding: 10px;
+}
+
+.formInput input{
+  width: 30%;
+}
+
+.img-visao img{
+  width: 15%;
+}
+
+.questOne, .questTwo, .questThree, .questFour{
+  margin-bottom: 5%;
+}
+
+button{
+  margin-bottom: 5%;
+}

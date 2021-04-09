@@ -1,0 +1,83 @@
+<div [class]="color">
+  <nav class="navbar navContainer">
+    <a class="navbar-brand">Rede Livro</a>
+    <a data-toggle="modal" data-target="#exampleModal">Contato</a>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="../assets/img/livro1.jpg" alt="">
+        <img src="../assets/img/livro2.jpg" alt="">
+        <h3>Categorias</h3>
+        <div class="d-flex flex-column category">
+          <a>
+            Biografia
+          </a>
+          <a>
+            Ficção
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container card-container">
+    <h2>Biografia</h2>
+    <div class="row">
+      <div class="col-lg-2 col-md-6 cardcont" *ngFor="let categoria of biografia">
+        <div class="card-cat">
+          <div class="container-img">
+            <img class="card-img-cat" src={{categoria.photoUrl}}>
+          </div>
+          <div class="text-dog">
+            <h5>{{categoria.title}}</h5>
+            <p>{{categoria.description}}</p>
+            <p>R$: {{categoria.price}}</p>
+            <a class="btn btn-primary btn-comprar">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <h2>Ficção</h2>
+    <div class="row fiction">
+      <div class="col-lg-3 col-md-6" *ngFor="let categoria of fiction">
+        <div class="card-cat">
+          <div class="container-img">
+            <img class="card-img-cat" src={{categoria.photoUrl}}>
+          </div>
+          <div class="text-dog">
+            <h5>{{categoria.title}}</h5>
+            <p>{{categoria.description}}</p>
+            <p>R$: {{categoria.price}}</p>
+            <a class="btn btn-primary btn-comprar">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Acesse nossas redes sociais</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a><img src="../assets/img/facebook.svg"></a>
+        <a><img src="../assets/img/instagram.svg"></a>
+        <a><img src="../assets/img/whatsapp.svg"></a>
+        <a><img src="../assets/img/twitter.svg"></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>

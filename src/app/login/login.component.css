@@ -1,0 +1,19 @@
+.navContainer{
+  background-color: #f0f0f0;
+}
+.navContainer a{
+  color: black;
+  font-weight: 500;
+}
+
+.container{
+  background-color: white;
+  margin-top: 7%;
+}
+
+.btn{
+  background-color: #27d62e;
+  color: white;
+  margin-left: 2%;
+  border-radius: 10%;
+}

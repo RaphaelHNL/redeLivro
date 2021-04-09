@@ -1,0 +1,139 @@
+<div class="bodyCad">
+  <nav class="navbar navContainer">
+    <a class="navbar-brand">Rede Livro</a>
+  </nav>
+  <div class="cadContianer container">
+    <h2>Cadastro</h2>
+    <form [formGroup]="meuFormGroup">
+      <div class="formInput">
+        <div class="form-group">
+          <label for="typeahead-basic">Nome:</label>
+          <input formControlName="name" id="typeahead-basic" type="text" class="form-control" placeholder="Insira seu nome" />
+        </div>
+        <div class="form-group">
+          <label for="typeahead-basic">Sobrenome:</label>
+          <input id="typeahead-basic" type="text" class="form-control" placeholder="Insira seu sobrenome" />
+        </div>
+        <div class="form-group">
+          <label for="typeahead-basic">E-mail:</label>
+          <input formControlName="email" id="typeahead-basic" type="email" class="form-control" placeholder="Insira seu endereço de e-mail" />
+        </div>
+        <div class="form-group">
+          <label for="typeahead-basic">Data de Nascimento:</label>
+          <input formControlName="birthDate" id="typeahead-basic" type="date" class="form-control" placeholder="dd/mm/aaaa" />
+        </div>
+        <div class="form-group">
+          <label for="typeahead-basic">Senha:</label>
+          <input formControlName="password" id="typeahead-basic" type="password" class="form-control" placeholder="Insira sua senha" />
+        </div>
+        <div class="form-group">
+          <label for="typeahead-basic">Confirmação de Senha:</label>
+          <input id="typeahead-basic" type="password" class="form-control" placeholder="Confirme sua senha" />
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <form [formGroup]="meuFormGroup">
+    <div class="container cadContianer">
+      <div class="questOne">
+        <p>Com que frequência você costuma utilizar a internet?</p>
+        <div class="form-check">
+          <input formControlName="frequency" class="form-check-input" type="radio" value="RARELY">
+          <label class="form-check-label">Raramente uso</label>
+        </div>
+        <div class="form-check">
+          <input formControlName="frequency" class="form-check-input" type="radio" value="MODERATELY">
+          <label class="form-check-label">Uso moderadamente</label>
+        </div>
+        <div class="form-check">
+          <input formControlName="frequency" class="form-check-input" type="radio" value="ALWAYS">
+          <label class="form-check-label">Uso com frequência</label>
+        </div>
+      </div>
+
+      <div class="questTwo">
+        <p>Você tem baixa visão?</p>
+        <div class="form-check">
+          <input formControlName="eyesight" value="PERFECT" class="form-check-input" type="radio">
+          <label class="form-check-label">Não, minha visão está em perfeitas condições.</label>
+        </div>
+        <div class="form-check">
+          <input formControlName="eyesight" value="SENSITIVITY" class="form-check-input" type="radio">
+          <label class="form-check-label">Não, porém tenho sensibilidade a claridade.</label>
+        </div>
+        <div class="form-check">
+          <input formControlName="eyesight" value="GLASSES" class="form-check-input" type="radio">
+          <label class="form-check-label">Sim, preciso utilizar óculos ou não consigo enxergar com clareza.</label>
+        </div>
+      </div>
+
+      <div class="questThree">
+        <p>Você possui alguma dessas deficiências visuais listadas abaixo?</p>
+        <div class="form-check">
+          <input formControlName="deficiency" value="nenhuma" class="form-check-input" type="radio">
+          <label class="form-check-label">Não possuo nenhuma das deficiências listadas abaixo</label>
+        </div>
+        <div class="form-check">
+          <input formControlName="deficiency" value="miopia" class="form-check-input" type="radio">
+          <label class="form-check-label">Miopia</label>
+        </div>
+        <div class="form-check">
+          <input formControlName="deficiency" value="daltonic" class="form-check-input" type="radio">
+          <label class="form-check-label">Daltonismo</label>
+        </div>
+        <div class="form-check">
+          <input formControlName="deficiency" value="astigma" class="form-check-input" type="radio">
+          <label class="form-check-label">Astigmatismo</label>
+        </div>
+        <div class="form-check">
+          <input formControlName="deficiency" value="hipermetropia" class="form-check-input" type="radio">
+          <label class="form-check-label">Hipermetropia</label>
+        </div>
+        <div class="form-check">
+          <input formControlName="deficiency" value="outros" class="form-check-input" type="radio">
+          <label class="form-check-label">Outros</label>
+        </div>
+      </div>
+
+
+      <div class="questFour">
+        <p>Analise as imagens abaixo e selecione a opção que melhor representa os números que você enxergou</p>
+        <div class="img-visao">
+          <img src="../assets/img/1.png" alt="">
+          <img src="../assets/img/2.png" alt="">
+          <img src="../assets/img/3.png" alt="">
+          <img src="../assets/img/4.png" alt="">
+          <img src="../assets/img/5.png" alt="">
+        </div>
+        <div class="form-check">
+          <input formControlName="degree" class="form-check-input" type="radio" value="1">
+          <label class="form-check-label">10 - 41 - 21 - 8 - 71</label>
+        </div>
+        <div class="form-check">
+          <input formControlName="degree" class="form-check-input" type="radio" value="2">
+          <label class="form-check-label">15 - 42 - 27 - 5 - 74</label>
+        </div>
+        <div class="form-check">
+          <input formControlName="degree" class="form-check-input" type="radio" value="3">
+          <label class="form-check-label">10 - 42 - 17 - 6 - 71</label>
+        </div>
+        <div class="form-check">
+          <input formControlName="degree" class="form-check-input" type="radio" value="4">
+          <label class="form-check-label">15 - 40 - 27 - 5 - 72</label>
+        </div>
+        <div class="form-check">
+          <input formControlName="degree" class="form-check-input" type="radio" value="5">
+          <label class="form-check-label">15 - 42 - 27 - 6 - 74</label>
+        </div>
+      </div>
+
+      <button (click)="cadastro()" type="button" [disabled]="!meuFormGroup.valid" class="btn btn-primary">Registrar</button>
+      <button type="button" class="btn btn-primary" [routerLink]="'/login'">Entrar</button>
+
+
+
+    </div>
+  </form>
+
+</div>

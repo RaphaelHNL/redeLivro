@@ -1,0 +1,71 @@
+.caseThree{
+  .navContainer{
+    background-color: #f0f0f0;
+  }
+  .navContainer a{
+    color: black;
+    font-weight: 500;
+  }
+  
+  img{
+    width: 50%;
+    margin-top: 3%;
+  }
+  h3 {
+    margin-top: 5%;
+  }
+  
+  .category a{
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+    width: 15%;
+    margin-bottom: 1px;
+    text-align: center;
+  }
+  
+  .cardcont{
+    margin-bottom: 2%;
+  }
+  
+  .card-cat {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+  
+  .card-img-cat {
+  width: 100%;
+  height: 100%;
+  }
+  
+  .text-dog {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .text-dog a {
+  margin-top: auto;
+  }
+  
+  .card-container{
+    margin-top: 3%;
+  }
+  
+  .card-img-top{
+    width: 100%;
+  }
+
+  .btn-comprar{
+    background: linear-gradient(to right, rgba(4, 50, 176, 1) 50%, rgba(52, 91, 199, 1) 50% );
+  }
+}

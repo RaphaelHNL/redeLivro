@@ -1,0 +1,22 @@
+<nav class="navbar navContainer">
+  <a class="navbar-brand">Rede Livro</a>
+</nav>
+<form [formGroup]="meuFormGroup">
+  <div class="container d-flex flex-column align-items-center">
+    <div>
+      <h1>Rede Livro</h1>
+    </div>
+    <div class="form-group">
+      <label for="typeahead-basic">E-mail</label>
+      <input formControlName="email" id="typeahead-basic" type="email" class="form-control" placeholder="Insira seu e-mail" />
+    </div>
+    <div class="form-group">
+      <label for="typeahead-basic">Senha</label>
+      <input formControlName="password" id="typeahead-basic" type="password" class="form-control" placeholder="Insira sua senha" />
+    </div>
+    <div class="d-flex">
+      <button (click)="login()" [disabled]="!meuFormGroup.valid" type="button" class="btn btn-login">Entrar</button>
+      <a type="button" class="btn btn-register" [routerLink]="'/cadastro'">Registrar</a>
+    </div>
+  </div>
+</form>
